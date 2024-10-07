@@ -24,8 +24,12 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
 3. **Configure Automatic Updates:**
    - Find **Configure Automatic Updates** and double-click it.
 
+---
+
 ### Remove unwanted programs
    - Ex. Wireshark, Nocap, Bit Torrent
+
+---
 
 ### Enable Firewall
 
@@ -41,6 +45,8 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
      - Firewall State = On
      - Inbound Connections = Block (default)
      - Outbound Connections = Allow (default)
+
+---
 
 ### Password Settings
 
@@ -61,6 +67,8 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
      - **Password Must Meet Complexity Requirements** = Enabled
      - **Store Passwords Using Reversible Encryption** = Disabled
 
+---
+
 ### Account Lockout Settings
 
 1. **Open Group Policy Editor:**
@@ -72,12 +80,16 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
 3. **Enable Policies:**
    - **Policies:**
 
+---
+
 ### Remove / add users
 1. Open Users:
    - Type **"users"** in the windows search bar
    - Open **"Add,edit, or remove other users"**
 
-### Method 1: Using the Services Console
+---
+
+### Turn on Event Server Log
 
 1. **Open Services:**
    - Press `Windows + R`, type `services.msc`, and press Enter.
@@ -88,6 +100,8 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
 3. **Check Status:**
    - The Status column will show if the service is **Running**. If the Startup type is **Automatic**, then Start.
 
+---
+
 ### Remove Unwanted Shares
 
 1. **Open Services:**
@@ -96,16 +110,22 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
 2. **Find Unwanted User:**
    - Example: greybeard: Right-click and select **Stop Sharing**.
 
+---
+
 ### Add Passwords to Users
 
 1. How to Detect the Problem:
 
    - Look at **User Accounts** under the Control Panel.
 
+---
+
 ### How to Change Password:
 
 1. Go to **Control Panel > User Accounts > Manage Accounts**.
 2. Pick the account that doesn't say “password protected,” then click **Change the password**.
+
+---
 
 ### Enable: Limit Local Use of Blank Passwords to Console Only
 
@@ -118,6 +138,8 @@ Get-FileHash <PathToYourFile> -Algorithm SHA256
 3. **Find the Setting:**
    - Look for **Accounts: Limit local use of blank passwords to console only**.
    - Right-click **Properties**, then click **Enable** and apply.
+
+---
 
 ### Disable: FTP Services
 
