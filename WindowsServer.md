@@ -12,6 +12,24 @@
 ```
 Get-FileHash <PathToYourFile> -Algorithm SHA256 
 ```
+### Finding the backdoor port: Using Resource Monitor:
+What port is the backdoor process configured to listen to?
+1. Open Resource Monitor: You can search for "Resource Monitor" in the Start menu or run `resmon` in the Run dialog `(Win + R).`
+
+2. Navigate to the "Network" Tab: Go to the "Network" tab and look for the "Listening Ports" section. This will show you the ports currently being listened to and the associated processes.
+
+### Find CVE for vulnerabilities for specific notepad++ version
+1. Check the Release Notes
+   - Visit the Notepad++ Website: Go to the Notepad++ official website.
+   - Access the Download Page: Navigate to the downloads section where you can find the latest version.
+   - View Release Notes: Each version usually has release notes detailing new features, bug fixes, and security patches. Look for a "Release Notes" or "Changelog" link.
+
+2. Search for CVEs
+   - Check Security Advisories: If available, look for security advisories linked from the release notes. Notepad++ may provide a list of CVEs related to the vulnerabilities that have been fixed.
+
+   - Visit the GitHub Repository: If the Notepad++ project is hosted on GitHub (as it is), check the repository's releases page
+
+---
 ## Normal Answers
 
 ### Enable auto updates: Using Group Policy
