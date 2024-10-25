@@ -8,3 +8,12 @@
 example: `sudo file . -size 740403c`
 
 ---
+## Update Ubuntu
+
+`sudo apt-get update`
+
+---
+
+## Enable filewall
+
+`sudo wfw enable`
