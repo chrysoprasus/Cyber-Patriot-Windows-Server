@@ -93,11 +93,13 @@ What port is the backdoor process configured to listen to?
    - Press `Windows + R`, type `gpedit.msc`, and press Enter.
 
 2. **Navigate to Password Policy:**
-   - Go to **Computer Configuration > Windows Settings > Security Settings > Account Policies > Password Policies**.
+   - Go to **Computer Configuration > Windows Settings > Security Settings > Account Policies > Account Lockout Policies**.
 
 3. **Enable Policies:**
    - **Policies:**
-
+      - **Account lockout duration** = 30
+      - **Account lockout threshold** = 15
+      - **Reset account lockout counter after** = 30
 ---
 
 ### Remove / add users
