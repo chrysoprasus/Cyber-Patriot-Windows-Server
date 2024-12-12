@@ -40,8 +40,10 @@ To configure the device, **the user must enter global configuration mode**, whic
         ```
         - Examples:
           - For a specific Ethernet port (e.g., FastEthernet 0/1):
-            `Switch(config)#interface FastEthernet0/1`
-          - FFor a Gigabit Ethernet port (e.g., GigabitEthernet 0/1):
+            `
+            Switch(config)#interface FastEthernet0/1
+            `
+          - For a Gigabit Ethernet port (e.g., GigabitEthernet 0/1):
             `Switch(config)#interface GigabitEthernet0/1`
           - For VLAN interfaces (e.g., VLAN 1):
             `Switch(config)#interface vlan 1`
