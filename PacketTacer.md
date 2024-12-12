@@ -11,7 +11,7 @@ As a security feature, the Cisco IOS software separates management access into t
     Switch>enable
     Switch# //now in Privileged EXEC Mode
     ``` 
-
+### Global configuration mod
 To configure the device, **the user must enter global configuration mode**, which is commonly called global config mode.
 1. **Global Configuration Mode**:
   - To enter Global config mode:
@@ -59,3 +59,68 @@ To configure the device, **the user must enter global configuration mode**, whic
 3. **Prompt Identification:**
   - The command-line prompt indicates the current configuration mode.
   - Prompts begin with the device name, followed by a unique identifier for the mode.
+
+
+### Navigate Between IOS Modes
+Various commands are used to move in and out of command prompts. To move from user EXEC mode to privileged EXEC mode, use the **enable** command. Use the **disable** privileged EXEC mode command to return to user EXEC mode.
+
+1. Transitioning Between Modes
+  - User EXEC Mode to Privileged EXEC Mode:
+    - Enter `enable` to move to privileged EXEC mode.
+    - Enter `disable` to return to user EXEC mode.
+2. Privileged EXEC Mode
+  - Also referred to as enable mode.
+  - From here, you can enter global configuration mode or execute advanced commands.
+
+3. Entering Global Configuration Mode
+  - From privileged EXEC mode:
+    - Enter `configure terminal`
+    - Example:
+      ```
+      Switch# configure terminal
+      Switch(config)#
+      ```
+  - To return to privileged EXEC mode:
+    - Use the `exit` command.
+    - Example:
+      ```
+      Switch(config)# exit
+      Switch#
+      ```
+4. Subconfiguration Modes
+   - Access specific settings using subcommands under global configuration mode:
+     -   Line Configuration Mode:
+       -  Command: `line [type] [number]`
+         ```
+          Switch(config)# line console 0
+          Switch(config-line)#
+         ```
+      - Interface Configuration Mode:
+        - Command: `interface [type] [number]`
+          ```
+          Switch(config)# interface FastEthernet 0/1
+          Switch(config-if)#
+          ```
+5. Exiting Modes
+     - To Move One Step Up in the Hierarchy:
+        - Use the `exit` command.
+        - Example
+          ```
+          Switch(config-line)# exit
+          Switch(config)#
+          ```
+    - To Return to Privileged EXEC Mode:
+      -    Use `end` or `Ctrl+Z`
+      -    Example
+        ```
+      Switch(config-line)# end
+      Switch#
+        ```
+6. Direct Transitions Between Subconfiguration Modes
+  -   Switch directly from one subconfiguration mode to another:
+  -   Example
+    ```
+    Switch(config-line)# interface FastEthernet 0/1
+    Switch(config-if)#
+    ```
+![very cool alt text](https://github.com/chrysoprasus/Cyber-Patriot-Windows-Server/blob/main/images/keyJPG.JPG)
