@@ -123,4 +123,6 @@ Various commands are used to move in and out of command prompts. To move from us
     Switch(config-line)# interface FastEthernet 0/1
     Switch(config-if)#
     ```
+
+
 ![very cool alt text](https://github.com/chrysoprasus/Cyber-Patriot-Windows-Server/blob/main/images/keyJPG.JPG)
