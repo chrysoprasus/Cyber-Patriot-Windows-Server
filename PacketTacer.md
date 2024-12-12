@@ -44,11 +44,17 @@ To configure the device, **the user must enter global configuration mode**, whic
             Switch(config)#interface FastEthernet0/1
             ```
           - For a Gigabit Ethernet port (e.g., GigabitEthernet 0/1):
-             ```Switch(config)#interface GigabitEthernet0/1 ```
+             ```
+             Switch(config)#interface GigabitEthernet0/1 
+             ```
           - For VLAN interfaces (e.g., VLAN 1):
-             ```Switch(config)#interface vlan 1 ```
+             ```
+             Switch(config)#interface vlan 1
+             ```
           - For a range of interfaces (e.g., FastEthernet 0/1 to 0/4):
-            ```Switch(config)#interface range FastEthernet0/1 - 0/4 ```
+            ```
+            Switch(config)#interface range FastEthernet0/1 - 0/4
+            ```
     - Prompt format: `DeviceName(config-if)# `(e.g., `Switch(config-if)#`).
 3. **Prompt Identification:**
   - The command-line prompt indicates the current configuration mode.
