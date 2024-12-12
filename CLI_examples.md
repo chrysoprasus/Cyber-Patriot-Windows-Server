@@ -6,55 +6,6 @@ This document holds the translation of the last CP packet tacer questions to CLI
 If this is your first time using packet tracer you use the CLI you must open the thing that is going to be configed and then the terminal 
 
 
-CS Distribution Router 1:
-
-·       Host name - CSDistributionRouter1
-
-·       IP addressing:
-
-§  Interface Gig 1/0/1 – 172.16.0.6/30
-
-§  Interface Gig 1/0/2 – 172.16.0.13/30
-
-§  Interface VLAN 1:
-
--        Network address – 172.16.0.16
-
--        Number of hosts available – 14
-
--        This interface should use the first available address in the subnet
-
-§  Interface VLAN 2:
-
--        Network address – 172.16.0.32
-
--        Number of hosts available - 6
-
--        This interface should use the first available address in the subnet
-
-§  Interface VLAN 3:
-
--        Interface address 192.168.0.1
-
--        Number of hosts available – 2046
-
-·       Routing:
-
-§  Routing to the other company networks and the internet is accomplished by two static floating default routes.
-
--        Main route should have a default gateway of 172.16.0.5
-
--        Secondary route should have a default gateway of 172.16.0.14 and distance of 254
-
-·       Switching:
-
-§  VLANs 1-3 should exist on the switch
-
-§  Interfaces Gig 1/0/3 and Gig 1/0/4 should be bundled together as an LACP etherchannel named port-channel 1
-
-§  Interfaces Gig 1/0/5 and Gig 1/0/6should be bundled together as an LACP etherchannel named port-channel 2
-
-§  Both Port Channels should be dot1q trunks
 
 
 1. Central Site (CS) - Internet Router Configuration (CSInternetRouter)
